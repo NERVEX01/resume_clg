@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanmay Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Sanmay's Resume</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about-me">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#feedback">Feedback</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container resume">
+        <header>
+            <h1>Sanmay Dudhal</h1>
+            <p>sanmay.dudhal@mitwpu.edu.in</p>
+        </header>
+
+        <div class="row">
+            <!-- First Sub-container -->
+            <div class="col-md-4">
+                <div class="sub-container sidebar">
+                    <img src="image1.jpg1" alt="Your Image" class="profile-image">
+                    <section id="skills" class="skills">
+                        <h2 class="section-title">Skills</h2>
+                        <ul>
+                            <li>Project Management</li>
+                            <li>Amazon Web Services</li>
+                            <li>Cloud Computing</li>
+                            <li>Full Stack Development</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+
+            <!-- Second Sub-container -->
+            <div class="col-md-8">
+                <div class="sub-container main-section">
+                    <section id="about-us" class="summary">
+                        <h2 class="section-title">About Me</h2>
+                        <p>
+                            I am a dedicated and passionate Computer Engineering student at MIT-WPU, with a strong foundation in software development and a keen interest in emerging technologies. With hands-on experience in programming languages such as Java, Python, and C++, I have developed a robust understanding of software engineering principles and best practices.
+                        </p>
+                        <p>
+                            My academic journey has been complemented by various internships and projects that have honed my problem-solving skills and enabled me to contribute effectively to real-world applications. I am adept at working in collaborative environments, leveraging my technical expertise and communication skills to drive successful project outcomes.
+                        </p>
+                        <p>
+                            I am committed to continuous learning and professional development, constantly seeking opportunities to expand my knowledge and stay updated with industry trends. My ultimate goal is to secure a challenging position at a leading software company where I can apply my skills and contribute to innovative solutions.
+                        </p>
+                    </section>
+
+                    <section id="experience" class="experience">
+                        <h2 class="section-title">Experience</h2>
+                        <div class="job">
+                            <h3>Job Title</h3>
+                            <p>Company Name | Date from - Date to</p>
+                            <ul>
+                                <li>MS-Office 2013</li>
+                                <li>GCC-TBC</li>
+                                <li>Red Hat Internship</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section id="education" class="education">
+                        <h2 class="section-title">Education</h2>
+                        <p>BH Chate Jr. College | 12th | 2021</p>
+                        <p>CWIT | Diploma | 2023</p>
+                        <p>MIT-WPU | Degree | 2026</p>
+                    </section>
+
+                    <section id="feedback" class="feedback">
+                        <h2 class="section-title">Feedback</h2>
+                        <form id="feedback-form">
+                            <label for="feedback">Your Feedback:</label>
+                            <textarea id="feedback" name="feedback"></textarea>
+                            <button type="button" onclick="submitFeedback()">Submit</button>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
